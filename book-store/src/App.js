@@ -4,6 +4,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/configureStore';
 import Nav from './components/navBar';
 import Book from './components/books';
 import BookNew from './components/bookNew';
@@ -39,18 +41,20 @@ const booksInfo = [
 const App = () => {
   const bookList = booksInfo.map((bookInfo) => <Book key={bookInfo.id} info={bookInfo} />);
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route exact path="/">
-          { bookList }
-          <BookNew />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route exact path="/">
+            { bookList }
+            <BookNew />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </Router>
+    </Provider>
   );
 };
 
