@@ -1,26 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
-import Books from './components/books';
-import Categories from './components/categories';
-import NavBar from './components/navBar';
+import './index.css';
+import App from './App';
 
 ReactDOM.render(
-  <Router>
-    <NavBar />
-    <Switch>
-      <Route path="/categories">
-        <Categories />
-      </Route>
-      <Route path="/">
-        <Books />
-      </Route>
-    </Switch>
-  </Router>,
-
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root'),
 );
