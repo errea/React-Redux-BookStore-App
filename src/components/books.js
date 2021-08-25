@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import BookInfor from './BookInfor';
-import BookActions from './BookActions';
-import BookCompletionStatus from './BookCompletionStatus';
-import BookProgress from './BookProgress';
+import BookInfor from './bookInfor';
+import BookActions from './bookActions';
+import BookCompletionStatus from './bookCompletionStatus';
+import BookProgress from './bookProgress';
 
 const Book = (
   {
