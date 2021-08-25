@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Categories = () => (
-  <div>
-    In progress...
-  </div>
+  <h2>Await .....</h2>
 );
 
 export default Categories;
