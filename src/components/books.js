@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import BookInfor from './bookInfor';
+import BookInfo from './bookInfor';
 import BookActions from './bookActions';
 import BookCompletionStatus from './bookCompletionStatus';
 import BookProgress from './bookProgress';
 
 const Book = (
   {
-    id, title, author, category,
+    id, title, category,
   },
 ) => (
   <div className="book-row">
     <div className="book-first-column">
-      <BookInfor title={title} author={author} category={category} />
+      <BookInfo title={title} category={category} />
       <BookActions id={id} />
     </div>
     <div className="book-remaining-column">
@@ -27,7 +27,6 @@ Book.propTypes = ({
   id: PropTypes.number,
   category: PropTypes.string,
   title: PropTypes.string,
-  author: PropTypes.string,
 }).isRequired;
 
 export default Book;
