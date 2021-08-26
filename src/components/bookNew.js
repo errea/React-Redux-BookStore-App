@@ -45,6 +45,7 @@ const BookNew = () => {
           placeholder="Book title"
           value={bookTitle}
           onChange={handleBookTitleChange}
+          required
         />
         <select
           className="category-select"
@@ -52,6 +53,7 @@ const BookNew = () => {
           id="categories"
           value={bookCategory}
           onChange={handleBookCategoryChange}
+          required
         >
           <option defaultValue="">Category</option>
           <option value="action">Action</option>

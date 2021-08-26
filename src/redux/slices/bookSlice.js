@@ -3,7 +3,7 @@ const GET_BOOKS_SUCCESS = 'books/booksslice/GET_BOOKS_SUCCESS';
 const GET_BOOKS_ERR = 'books/booksslice/GET_BOOKS_ERR';
 
 const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
-const bookStoreID = 'AuUAkr1MpC49B8QoMijD';
+const bookStoreID = '1xQvEGxmD6SUYX71Au1O';
 
 const booksURL = `${baseURL}${bookStoreID}/books/`;
 
