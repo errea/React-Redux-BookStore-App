@@ -52,7 +52,7 @@ You will need to build a website with two subpages: "Books" and "Categories." Ho
 
   
 
-![screenshot](./src/img/bookstore.png)
+![screenshot](./src/img/screen-shot.png)
 ## Getting Started <a name = "gs"></a>
 > To get a local copy up and running follow these simple example steps.
 

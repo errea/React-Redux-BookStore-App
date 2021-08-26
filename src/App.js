@@ -6,10 +6,10 @@ import {
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
-import Nav from './components/NavBar';
+import Nav from './components/navBar';
 import BookStore from './components/BookStore';
-import BookNew from './components/BookNew';
-import Categories from './components/Categories';
+import BookNew from './components/bookNew';
+import Categories from './components/categories';
 
 const App = () => (
   <Provider store={store}>
