@@ -15,15 +15,17 @@ const App = () => (
   <Provider store={store}>
     <Router>
       <Nav />
-      <Switch>
-        <Route exact path="/">
-          <BookStore />
-          <BookNew />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-      </Switch>
+      <div className="container">
+        <Switch>
+          <Route exact path="/">
+            <BookStore />
+            <BookNew />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   </Provider>
 );
